@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'lifecraftregular';
+    src: url('Fonts/lifecraft_font-webfont.woff2') format('woff2'),
+         url('Fonts/lifecraft_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wraper {
+    background: transparent;  
+    opacity: 1;
+    min-height: 100vh; 
+    position: relative;
+    z-index: 1;
+}
+
+.wraper_bg {
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("Img/1.jpg");
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    width: 60%;
+    height: 110px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.title p {
+    font-family: 'lifecraftregular';
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color: #fff;
+    opacity: 1;
+}
+
+.bg {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.panels {
+    width: 100%;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.wraper_panel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horde_btn {
+    color: #fff;
+    font-family: 'lifecraftregular';
+    font-size: 90px;
+    height: 300px;
+    width: 450px;
+    background-color: transparent;
+    border: 0;
+    padding: 37px; 
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #fff;
+    transition: color 0.25s;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.btn_ho_bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #990000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.horde_btn::before {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.horde_btn::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.horde_btn:hover {
+    opacity: 0.9;
+    color: black;
+    background-color: #990000;
+}
+
+.horde_btn:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top-color: #000000 ;
+    border-right-color:  #000000;
+    transition:
+      width 0.25s ease-out, 
+      height 0.25s ease-out 0.25s; 
+}
+
+.horde_btn:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom-color: #000000; 
+    border-left-color: #000000;
+    transition:
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+}
+
+.alliance_btn {
+    color: #fff;
+    font-family: 'lifecraftregular';
+    font-size: 90px;
+    height: 300px;
+    width: 450px;
+    background-color: transparent;
+    border: 0;
+    padding: 37px; 
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #fff;
+    transition: color 0.25s;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.btn_al_bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #032F60;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+
+.alliance_btn::before {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.alliance_btn::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.alliance_btn:hover {
+    opacity: 0.9;
+    color: #CA9207;
+    background-color: #032F60;
+}
+
+.alliance_btn:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top-color: #CA9207 ;
+    border-right-color:  #CA9207;
+    transition:
+      width 0.25s ease-out, 
+      height 0.25s ease-out 0.25s; 
+}
+
+.alliance_btn:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom-color: #CA9207; 
+    border-left-color: #CA9207;
+    transition:
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+}
+
+.menu {
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    padding: 8px;
+    opacity: 0.9;
+    justify-content: center;
+    background-color: #000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.buttons_panel {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+
+
+.button {
+    color: #fff;
+    width: 100px;
+    font-size: 25px;
+    border: solid #fff 2px;
+    background-color: transparent;
+    padding: 7px; 
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-family: 'lifecraftregular';
+}
+
+.button:hover {
+    background-color: #8c8c8c;
+    opacity: 0.7;
+}
+
+
+.movie {
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+    color: white;
+    opacity: 0.8;
+    font-size: 36px;
+    background-image: url("Img/2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movie_content {
+    margin: 0;
+    align-items: center;
+    padding: 100px 100px;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+.movie p {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.fractions {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    opacity: 0.9;
+}
+
+.horde {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: #990000;
+    color: #000000;
+    margin: 0;
+    padding: 100px 50px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    min-height: 100vh;
+}
+
+.horde_title {
+    font-size: 150px;
+    font-family: 'lifecraftregular';
+}
+
+.horde_symbol {
+    font-family: 'lifecraftregular';
+    font-size: 200px;
+}
+
+.horde p {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.alliance {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: #032F60;
+    color: #CA9207;
+    margin: 0;
+    padding: 100px 50px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    min-height: 100vh;
+}
+
+.alliance_title {
+    font-size: 150px;
+    font-family: 'lifecraftregular';
+}
+
+.alliance_symbol {
+    font-family: 'lifecraftregular';
+    font-size: 200px;
+}
+
+.alliance p {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
